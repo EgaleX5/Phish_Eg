@@ -26,8 +26,8 @@ step by step guide 👇
     bash setup.sh
 #### Step 6: Run the tool 
     python joker_Phishing
-## Requesting new quick Tunnel on trycloudflare.com...
-2025-01-26T07:43:25Z INF +--------------------------------------------------------------------------------------------+
+##### You will get the link somewhere in the text like this 
+2025-01-26T07:43:25Z INF +------------------------------------------------------You will get the link somewhere in the text like this --------------------------------------+
 2025-01-26T07:43:25Z INF |  Your quick Tunnel has been created! Visit it at (it may take some time to be reachable):  |
 2025-01-26T07:43:       |  Here you will be shown the link on your termux 
 2025-01-26T07:43:25Z INF +--------------------------------------------------------------------------------------------+
