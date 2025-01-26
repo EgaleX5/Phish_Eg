@@ -1,6 +1,6 @@
 ## Phish_Eg
 
-Phish_Eg is a hacking tool developed by EgaleX5. It provides functionality for phishing attacks, username and password capturing, and more. The tool is built using Flask and designed for educational purposes only.
+Phish_Eg is a hacking tool developed by EgaleX5. It provides functionality for phishing attacks, username and password capturing, and more. 
 
 ### Features
 - Phishing attack templates
