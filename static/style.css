@@ -1,0 +1,129 @@
+/* General Style */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: url('./img.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Login Section */
+.login-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 10px; /* Add padding for small screens */
+}
+
+.form-container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    width: 400px;
+    color: #fff;
+}
+
+/* Form Inputs */
+.inputbox {
+    position: relative;
+    margin: 30px 0;
+    width: 100%;
+    border-bottom: 2px solid #fff;
+}
+
+.inputbox label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 1em;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.inputbox input {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 1em;
+    padding: 0 5px;
+}
+
+.inputbox input:focus ~ label,
+.inputbox input:valid ~ label {
+    top: 5px;
+    font-size: 0.9em;
+    color: #ff1493;
+}
+
+button {
+    width: 100%;
+    height: 50px;
+    background: #ff1493;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #1e90ff;
+}
+
+/* Media Queries for Smaller Screens */
+
+/* For screens smaller than 400px */
+@media (max-width: 400px) {
+    .form-container {
+        width: 90%; /* Reduce width to fit smaller screens */
+        padding: 20px; /* Adjust padding */
+    }
+
+    .inputbox {
+        margin: 20px 0;
+    }
+
+    .inputbox input {
+        font-size: 0.9em; /* Adjust font size */
+    }
+
+    button {
+        height: 45px; /* Slightly smaller button height */
+        font-size: 0.9em;
+    }
+}
+
+/* For screens smaller than 350px */
+@media (max-width: 350px) {
+    .form-container {
+        width: 95%; /* Further reduce width */
+        padding: 15px; /* Reduce padding */
+    }
+
+    h2 {
+        font-size: 1.2em; /* Smaller title font */
+    }
+
+    label {
+        font-size: 0.8em; /* Smaller label size */
+    }
+
+    button {
+        height: 40px; /* Smaller button height */
+        font-size: 0.8em;
+    }
+}
