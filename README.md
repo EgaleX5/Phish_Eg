@@ -6,7 +6,6 @@
 - Phishing attack templates
 - Username and password capture
 - Cloudflared tunnel for external access
-- Flask-based web server
 - Simple setup via `setup.sh`
 
 ### Guide 
