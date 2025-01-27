@@ -55,5 +55,5 @@ clear
 echo -e "\e[1;32m=====================================\e[0m"
 echo -e "\e[1;33m      Setup Completed Successfully!\e[0m"
 echo -e "\e[1;32m=====================================\e[0m"
-echo -e "\n\e[1;36mRun your tool with: \e[1;32mpython t2.py\e[0m"
+echo -e "\n\e[1;36mRun your tool with: \e[1;32mpython joker_Phishing\e[0m"
 echo -e "\e[1;32mEnjoy using EgaleX5's tool without any issues!\e[0m"
