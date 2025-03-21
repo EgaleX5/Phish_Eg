@@ -25,11 +25,12 @@ step by step guide 👇
     bash setup.sh
 #### Step 6: Run the tool 
     python joker_Phishing
-##### You will get the link somewhere in the text like this 
-2025-01-26T07:43:25Z INF +------------------------------------------------------You will get the link somewhere in the text like this --------------------------------------+
-2025-01-26T07:43:25Z INF |  Your quick Tunnel has been created! Visit it at (it may take some time to be reachable):  |
-2025-01-26T07:43:       |  Here you will be shown the link on your termux 
-2025-01-26T07:43:25Z INF +--------------------------------------------------------------------------------------------+
+## 📞 Contact & Updates:  
+📌 **Created by:** [EgaleX5](https://github.com/EgaleX5)  
+📌 **Instagram:** [@aditya.waliya0](https://www.instagram.com/aditya.waliya0)  
+📌 **GitHub:** [EgaleX5](https://github.com/EgaleX5)  
+
+🚀 **Follow for more cybersecurity tools & updates!**
 
 
     
